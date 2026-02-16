@@ -259,6 +259,41 @@
       .bad {
         color: var(--bad);
       }
+
+      @media (max-width: 640px) and (orientation: portrait) {
+        #hud {
+          top: 8px;
+          left: 8px;
+          right: 8px;
+          gap: 8px;
+        }
+
+        .card {
+          min-width: 96px;
+          min-height: 58px;
+          padding: 6px 8px;
+        }
+
+        .label {
+          font-size: 10px;
+          letter-spacing: 0.04em;
+        }
+
+        .value {
+          font-size: 16px;
+        }
+
+        #centerPanel {
+          top: 10px;
+          min-width: 92px;
+          min-height: 58px;
+          padding: 6px 10px;
+        }
+
+        #centerPanel .value {
+          font-size: 15px;
+        }
+      }
     </style>
   </head>
   <body>
